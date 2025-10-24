@@ -147,9 +147,9 @@ Copy code
 cipherX2433
 💼 Machine Learning for Finance & Risk Analytics
 🌐 GitHub Profile
-
-🪪 License
-This project is licensed under the MIT License.
-See the LICENSE file for details.
 ```
+🪪 License
+- This project is licensed under the MIT License.
+- See the LICENSE file for details.
+
 <p align="center"> ⭐ If you find this project helpful, consider giving it a star! </p>
