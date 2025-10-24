@@ -58,7 +58,7 @@ Our machine learning approach enhances detection of risky borrowers while mainta
 
 ## 🧩 Workflow
 
-```mermaid
+
 graph TD
 A[Raw Dataset] --> B[Data Cleaning & Preprocessing]
 B --> C[Feature Engineering & Selection]
