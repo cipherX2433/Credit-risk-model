@@ -151,5 +151,5 @@ cipherX2433
 🪪 License
 This project is licensed under the MIT License.
 See the LICENSE file for details.
-
-<p align="center"> ⭐ If you find this project helpful, consider giving it a star! </p> ```
+```
+<p align="center"> ⭐ If you find this project helpful, consider giving it a star! </p>
