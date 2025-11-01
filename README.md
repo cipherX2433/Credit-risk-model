@@ -1,30 +1,40 @@
-<!-- ✨ Colorful Banner and Shields -->
+<!-- ✨ Colorful Header Banner -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Credit%20Risk%20Model-ML-blue?style=for-the-badge&logo=credit%20karma" alt="Credit Risk Model"/>
+  <img src="https://img.shields.io/badge/Credit%20Risk%20Model-ML-blue?style=for-the-badge&logo=python" alt="Credit Risk Model"/>
   <img src="https://img.shields.io/badge/AUC-%3E0.90-brightgreen?style=for-the-badge" alt="AUC"/>
   <img src="https://img.shields.io/badge/SMOTE-%2B14%25-yellow?style=for-the-badge" alt="SMOTE"/>
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python"/>
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python"/>
   <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter" alt="Jupyter"/>
 </p>
 
 <h1 align="center">💳 Credit Risk Modeling using Machine Learning</h1>
-<p align="center">Predicting loan default probability using tree-based ML models with high interpretability and recall optimization.</p>
 
-----------------------------------------------------------------------------------------------
-<p align="center">Live Demo App: https://cipherx-credit-risk-model.streamlit.app/</p>
+<p align="center">
+  Predicting loan default probability using tree-based ML models with <b>high interpretability</b> and <b>recall optimization</b>.
+</p>
+
+<p align="center">
+  🌐 <a href="https://cipherx-credit-risk-model.streamlit.app/">Live Demo App</a> |
+  🧠 <a href="https://github.com/cipherX2433/Credit-risk-model">Source Code</a>
+</p>
+
 ---
 
-## ✨ Overview
+## 🧠 Overview
 
 > **Goal:** Predict the likelihood of loan default using advanced ML techniques, focusing on recall for high-risk borrowers.
 
 Financial institutions rely on accurate credit risk assessment to minimize loan losses and optimize decision-making.  
 This project explores **data-driven modeling**, **class imbalance handling**, and **explainable AI** for credit scoring.
 
-📊 **Highlights**
+---
+
+### 📊 Highlights
+
 - 🏆 **Best Model:** XGBoost (AUC > 0.90)
 - ⚖️ **SMOTE Oversampling:** +14% recall improvement
 - 🔍 **Top Features:** Credit History, Loan-to-Income Ratio
+- 🧩 **Focus Metrics:** Recall & AUC to minimize false negatives (missed defaulters)
 
 ---
 
@@ -38,10 +48,10 @@ Our machine learning approach enhances detection of risky borrowers while mainta
 ## 🧭 Objectives
 
 ✅ Build robust classifiers for binary credit risk classification  
-✅ Perform extensive EDA and feature engineering  
-✅ Handle severe class imbalance using **SMOTE** and hybrid sampling  
+✅ Perform detailed EDA and feature engineering  
+✅ Handle class imbalance using **SMOTE** and hybrid sampling  
 ✅ Optimize for **AUC**, **Recall**, and **F1-score**  
-✅ Improve model transparency using **feature importance** and **SHAP**
+✅ Enhance transparency with **feature importance** and **SHAP explanations**
 
 ---
 
@@ -54,13 +64,13 @@ Our machine learning approach enhances detection of risky borrowers while mainta
 | **Credit History** | Credit Score, Previous Loans |
 | **Target** | Loan_Status / Default_Flag |
 
-🧹 Data preprocessing includes missing value imputation, categorical encoding, and feature scaling.
+🧹 Data preprocessing includes **missing value imputation**, **categorical encoding**, and **feature scaling**.
 
 ---
 
 ## 🧩 Workflow
 
-```
+```mermaid
 graph TD
 A[Raw Dataset] --> B[Data Cleaning & Preprocessing]
 B --> C[Feature Engineering & Selection]
@@ -68,6 +78,9 @@ C --> D[Train-Test Split]
 D --> E[Model Training]
 E --> F[Evaluation Metrics]
 F --> G[Model Comparison & Interpretation]
+```
+
+```
 🔬 Modeling Techniques
 Model	Type	Description
 Logistic Regression	Baseline	Benchmark for interpretability
@@ -77,47 +90,27 @@ XGBoost	Gradient Boosting	Best performer with AUC > 0.90
 Sampling: SMOTE, RandomUnderSampler, CombinedSampler
 Feature Selection: RFE + Tree-based importance
 Validation: Stratified K-Fold Cross-validation
+```
 
-📊 Evaluation Metrics
-Metric	Description	Priority
-Accuracy	Overall correctness	🟡 Medium
-Precision	Reliability of default predictions	🟢 High
-Recall	% of defaulters correctly identified	🔴 Critical
-F1-Score	Harmonic mean of Precision/Recall	🟢 Balanced
-ROC-AUC	Area under ROC curve	🟣 Model performance
-
-⚠️ Focus Metric: Recall & AUC to minimize false negatives (missed defaulters).
-
-📈 Results Summary
+```
+📊 Results Summary
 Model	AUC	Recall	Precision	F1
 Logistic Regression	0.83	0.72	0.70	0.71
 Random Forest	0.88	0.78	0.75	0.76
 🏆 XGBoost	0.91	0.82	0.77	0.79
 
-📈 SMOTE Oversampling led to +14% recall improvement
-💡 Credit History and Loan-to-Income ratio emerged as the most critical predictors.
+⚡ SMOTE oversampling improved recall by +14%.
+💡 Credit History and Loan-to-Income Ratio are top predictors.
 
 🧰 Tech Stack
 Component	Technology
-Language	Python 3.x
+Language	Python 3.11
 Environment	Jupyter Notebook
 ML Libraries	Scikit-learn, XGBoost
 Data Analysis	Pandas, NumPy
 Visualization	Matplotlib, Seaborn
-Explainability	SHAP / LIME
-
-📁 Repository Structure
-bash
-Copy code
-├── Credit_Risk_Model.ipynb        # Jupyter notebook with ML pipeline
-├── data/                          # Input datasets
-├── models/                        # Saved model artifacts
-├── results/                       # Evaluation reports, charts
-├── requirements.txt               # Dependencies
-└── README.md                      # Project documentation
-🚀 How to Run Locally
-bash
-Copy code
+Explainability	SHAP, LIME
+```
 # Clone repository
 git clone https://github.com/cipherX2433/Credit-risk-model.git
 cd Credit-risk-model
@@ -127,31 +120,5 @@ pip install -r requirements.txt
 
 # Launch notebook
 jupyter notebook Credit_Risk_Model.ipynb
-💡 Tip: Run all cells sequentially to reproduce training, evaluation, and metrics output.
 
-🎨 Visuals
-Add charts and images to /results/ for richer presentation:
 
-markdown
-Copy code
-![ROC Curve](results/roc_curve.png)
-![Feature Importance](results/feature_importance.png)
-🔮 Future Enhancements
-🧮 PD/LGD/EAD estimation for Basel modeling
-
-💰 Cost-sensitive learning for loss minimization
-
-🌐 Deploy ML API via Flask / FastAPI
-
-📊 Integrate SHAP dashboards for model interpretability
-
-👨‍💻 Author
-cipherX2433
-💼 Machine Learning for Finance & Risk Analytics
-🌐 GitHub Profile
-```
-🪪 License
-- This project is licensed under the MIT License.
-- See the LICENSE file for details.
-
-<p align="center"> ⭐ If you find this project helpful, consider giving it a star! </p>
