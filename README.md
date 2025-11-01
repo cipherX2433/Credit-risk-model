@@ -10,6 +10,8 @@
 <h1 align="center">💳 Credit Risk Modeling using Machine Learning</h1>
 <p align="center">Predicting loan default probability using tree-based ML models with high interpretability and recall optimization.</p>
 
+----------------------------------------------------------------------------------------------
+<p align="center">Live Demo App: https://cipherx-credit-risk-model.streamlit.app/</p>
 ---
 
 ## ✨ Overview
