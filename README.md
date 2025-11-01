@@ -18,8 +18,6 @@
   🧠 <a href="https://github.com/cipherX2433/Credit-risk-model">Source Code</a>
 </p>
 
----
-
 ## 🧠 Overview
 
 > **Goal:** Predict the likelihood of loan default using advanced ML techniques, focusing on recall for high-risk borrowers.
